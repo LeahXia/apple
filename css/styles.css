@@ -54,3 +54,147 @@ table {
 }
 
 /* Starts Here*/
+
+body{
+	font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+	font-weight: normal;
+}
+
+a, a:visited{
+	color:#fff;
+}
+
+a:hover{
+	text-decoration:none;
+	color:#aaa;
+}
+
+
+
+header nav{
+	height:48px;
+	max-height:44px;
+	width:100%;
+	background:#000;
+}
+header ul{
+	margin-left:300px;
+}
+header li{
+	color:#fff;
+	font-size: 17px;
+	display:inline-block;
+	padding:15px 33px;
+}
+
+header img{
+	width:25px;
+	height:25px;
+}
+
+#iphone7{
+	width:100%;
+	height:800px;
+	background-image:url("https://images.apple.com/v/home/dg/images/heroes/iphone_alt_large.jpg");
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+
+#iphone7 h1, #iphone7 h2{
+	color:#fff;
+	line-height: 50px;
+	text-align: center;
+}
+
+#iphone7 h2{
+	font-size: 32px;
+	padding-top:50px;
+	font-weight:500;
+	letter-spacing:0.11em;
+}
+
+#iphone7 h1{
+	font-size: 48px;
+	letter-spacing:0.006em;
+	font-weight:500;
+}
+
+#img-links img{
+	width:355px;
+	height:200px;
+}
+
+#img-links li{
+	display:inline-block;
+	margin-left:-2px;
+}
+
+footer{
+	background:#f0f0f0;
+	width:100%;
+	height:420px;
+}
+
+table, footer p, #copyright, hr{
+	width:70%;
+	margin-left:15%;
+}
+
+table{
+	height:260px;
+}
+
+td{
+	font-size:12px;
+	line-height: 23px;
+	color:#999;
+}
+
+footer p, #copyright li, #copyright a{
+	font-size:11px;
+	line-height: 21px;
+	color:#bbb;
+}
+
+th, .footer-heading {
+	font-size:13px;
+	line-height: 30px;
+	color:#000;
+}
+
+footer p{
+	margin-top:50px;
+}
+
+footer p a{
+	color:#3c78d8
+}
+
+hr{
+	margin:6px auto;
+	height: 1px;
+  background: #ccc;
+}
+
+#copyright li{
+	display:inline-block;
+}
+
+#copyright img{
+	width:15px;
+	height:15px;
+	float: right;
+}
+
+#copy{
+	padding-right:27px;
+}
+
+.country{
+	float: right;
+	margin:auto 3px;
+}
+
+.copyright-links{
+	padding:0 5px;
+}
