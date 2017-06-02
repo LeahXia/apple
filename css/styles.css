@@ -56,8 +56,8 @@ table {
 /* Starts Here*/
 
 body{
-	font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-	font-weight: normal;
+	font-family: sans-serif;
+	font-weight:100;
 }
 
 a, a:visited{
@@ -78,18 +78,48 @@ header nav{
 	background:#000;
 }
 header ul{
-	margin-left:300px;
+	width:74%;
+	margin: 0 13%;
+	height:44px;
 }
 header li{
 	color:#fff;
 	font-size: 17px;
 	display:inline-block;
-	padding:15px 33px;
+	padding:0 33px;
 }
 
-header img{
-	width:25px;
-	height:25px;
+#search-icon a, #shopping-bag a{
+	margin:0;
+	padding:0;
+}
+
+#apple-logo{
+	padding:8px 40px 0 30px;
+}
+
+#search-icon{
+	padding:8px 38px 1px 26px;
+}
+
+
+
+
+#apple-logo img{
+	width:16px;
+	height:20px;
+}
+
+#search-icon img{
+	width:17px;
+	height:19px;
+}
+
+#shopping-bag img{
+	width:30px;
+	height:32px;
+	position:absolute;
+	top:3px;
 }
 
 #iphone7{
@@ -166,8 +196,13 @@ footer p{
 	margin-top:50px;
 }
 
-footer p a{
+footer p a, footer p a:visited,footer p a:hover{
 	color:#3c78d8
+}
+
+
+footer p a:hover{
+	text-decoration:underline;
 }
 
 hr{
