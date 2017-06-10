@@ -1,5 +1,7 @@
 $(document).ready(function(){
-    $("p").click(function(){
-        $(this).hide();
-    });
+
+   $('.toggleNav').on('click',function() {
+     $('.flex-nav ul').toggleClass('open');
+   });
+
 });

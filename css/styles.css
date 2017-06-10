@@ -72,38 +72,31 @@ a:hover{
 
 
 header nav{
-	height:48px;
 	max-height:44px;
 	width:100%;
 	background:#000;
+	padding-top:10px;
 }
+
 header ul{
 	width:74%;
 	margin: 0 13%;
-	height:44px;
+	max-height:44px;
+	display: flex;
+	align-items: center;
 }
-header li{
+
+header nav ul li{
 	color:#fff;
 	font-size: 17px;
-	display:inline-block;
-	padding:0 33px;
+	align-self: baseline;
+	flex:2;
+	text-align: center;
 }
 
-#search-icon a, #shopping-bag a{
-	margin:0;
-	padding:0;
+#apple-logo, #search-icon, #shopping-bag{
+	flex:1.5;
 }
-
-#apple-logo{
-	padding:8px 40px 0 30px;
-}
-
-#search-icon{
-	padding:8px 38px 1px 26px;
-}
-
-
-
 
 #apple-logo img{
 	width:16px;
@@ -112,14 +105,17 @@ header li{
 
 #search-icon img{
 	width:17px;
-	height:19px;
+	height:17px;
+	margin-bottom:0;
 }
 
 #shopping-bag img{
-	width:30px;
-	height:32px;
-	position:absolute;
-	top:3px;
+	width:18px;
+	height:18px;
+}
+
+.toggleNav{
+	display:none;
 }
 
 #iphone7{
@@ -127,7 +123,7 @@ header li{
 	height:800px;
 	background-image:url("https://images.apple.com/v/home/dg/images/heroes/iphone_alt_large.jpg");
 	background-repeat:no-repeat;
-	background-size: cover;
+	background-size:100% 800px;
 }
 
 #iphone7 h1, #iphone7 h2{
@@ -138,7 +134,7 @@ header li{
 
 #iphone7 h2{
 	font-size: 32px;
-	padding-top:50px;
+	padding-top:4%;
 	font-weight:500;
 	letter-spacing:0.11em;
 }
@@ -150,13 +146,20 @@ header li{
 }
 
 #img-links img{
-	width:350px;
-	height:200px;
+	width:100%;
+}
+
+
+
+#img-links ul{
+	display:flex;
+	flex-wrap:wrap;
+	width:100%;
 }
 
 #img-links li{
-	display:inline-block;
-	margin-left:0px;
+	width:25%;
+	flex:1;
 }
 
 footer{
@@ -171,7 +174,8 @@ table, footer p, #copyright, hr{
 }
 
 table{
-	height:260px;
+	max-height:260px;
+	padding-bottom: 10px;
 }
 
 td{
@@ -232,4 +236,106 @@ hr{
 
 .copyright-links{
 	padding:0 5px;
+}
+
+@media (max-width:1024px){
+	header ul{
+		width:100%;
+		margin: 0;
+	}
+
+	#iphone7{
+		height:550px;
+		background-size:100% 550px;
+	}
+
+	table{
+		width:100%;
+		margin:0 5%;
+	}
+
+
+
+}
+
+@media (max-width:768px){
+	#iphone7{
+		height:420px;
+		background-size:100% 420px;
+	}
+
+	#iphone7 h1{
+		line-height: 40px;
+		font-size: 45px;
+
+	}
+
+	#iphone7 h2{
+		line-height: 40px;
+		font-size: 26px;
+		padding-top:3%;
+	}
+
+
+
+	#img-links li{
+		flex:1 1 50%;
+	}
+
+	table{
+		/* Drop-down bars*/
+	}
+}
+
+@media (max-width:500px){
+	#iphone7{
+		height:240px;
+		background-size:100% 240px;
+	}
+
+	#iphone7 h1{
+		font-size: 38px;
+	}
+
+	#iphone7 h2{
+		font-size: 21px;
+		padding-top:3.5%;
+	}
+
+	#img-links li{
+		flex:1 1 100%;
+	}
+
+	.toggleNav{
+		display:block;
+
+	}
+
+
+	header nav ul{
+		display:none;
+
+	}
+
+	.flex-nav ul.open{
+		display:flex;
+		flex-wrap:wrap;
+		width:100%;
+
+		max-height:200px;
+		padding: 0;
+	}
+
+
+
+	.flex-nav li{
+		flex:1 1 100%;
+		padding:5px 0;
+		background: #000;
+		z-index: 999;
+	}
+
+
+
+
 }
