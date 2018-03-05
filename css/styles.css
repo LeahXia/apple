@@ -271,14 +271,12 @@ header li a:visited{
 
 #iphone7{
 	width:100%;
-	height:800px;
-	background-image:url("https://images.apple.com/v/home/dg/images/heroes/iphone_alt_large.jpg");
-	background-repeat:no-repeat;
-	background-size:100% 800px;
+	height:580px;
+	background: #fafafa;
 }
 
 #iphone7 h1, #iphone7 h2{
-	color:#fff;
+	color:#000;
 	line-height: 50px;
 	text-align: center;
 }
@@ -295,6 +293,12 @@ header li a:visited{
 	letter-spacing:0.006em;
 	font-weight:500;
 }
+
+#iphone7 img{
+	width: 63vw;
+	margin: 90px 18.5vw 0;
+}
+
 
 #img-links{
 	margin-top:2px;
@@ -319,7 +323,7 @@ header li a:visited{
 footer{
 	background:#f0f0f0;
 	width:100%;
-	padding-top:10px;
+	padding:10px 0;
 }
 
 footer nav, #footer-info{
@@ -332,6 +336,10 @@ footer nav{
 	justify-content: space-between;
 }
 
+footer .panel{
+	background:#f0f0f0;
+}
+
 footer nav li a{
 	font-size:12px;
 	line-height: 23px;
@@ -341,6 +349,7 @@ footer nav li a{
 footer a:visited{
 	color:#777;
 }
+
 
 #footer-info, #footer-info a{
 	margin:35px auto 20px;
@@ -363,23 +372,37 @@ hr{
   background: #ccc;
 }
 
-#copyright li{
+#copyright{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#policy{
+	flex:5;
+	/* width: 450px; */
+}
+
+#policy li{
 	display:inline-block;
 }
 
 #copy{
 	padding-right:27px;
+	/* width: 235px; */
 }
 
-#copyright img{
+#country{
+	margin:auto 3px;
+	flex:1;
+	/* width: 99px; */
+}
+
+#country img{
 	width:15px;
 	height:15px;
 }
 
-.country{
-	float: right;
-	margin:auto 3px;
-}
+
 
 .copyright-links{
 	padding:0 5px;
@@ -417,8 +440,6 @@ hr{
 		width:94%;
 		margin-left:3%;
 	}
-
-
 
 }
 
@@ -578,6 +599,11 @@ hr{
 		padding-top:3%;
 	}
 
+	#iphone7 img{
+		width: 80vw;
+		margin: 90px 10vw 0;
+	}
+
 
 
 	#img-links li{
@@ -636,12 +662,24 @@ hr{
 		transition: display 0.2s ease-out;
 	}
 
+	#shop hr{
+		display: none;
+	}
+
+	#policy{
+		width: 100%;
+		margin-left: -4px;
+	}
+
+	#copy{
+		width: 100%;
+	}
 
 }
 
 @media (max-width:500px){
 	#iphone7{
-		height:500px;
+		height:360px;
 		background-size:160% 500px;
 		background-position: center;
 	}
@@ -659,6 +697,19 @@ hr{
 		flex:1 1 100%;
 	}
 
+	#copy, #policy,#country{
+		margin-top: 5px;
+	}
+
+	#policy,#country{
+		flex:1 1 100%;
+	}
+
+	#country{
+		margin: 5px 0 5px -2px;
+	}
+
+
 
 
 }
@@ -668,5 +719,9 @@ hr{
 		width:100vw;
 		right:0px;
 
+	}
+
+	#country{
+		flex: 2;
 	}
 }
